@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap');
 *{
     padding: 0;
     margin: 0;
@@ -8,10 +9,17 @@
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
 }
-:focus,:active{outline: none;}
-a:focus,a:active{outline: none;}
 
-nav,footer,header,aside{display: block;}
+:focus,:active{
+    outline: none;
+}
+a:focus,a:active{
+    outline: none;
+}
+
+nav,footer,header,aside{
+    display: block;
+}
 
 html,body{
     height: 100%;
@@ -19,10 +27,13 @@ html,body{
     font-size: 100%;
     line-height: 1;
     font-size: 14px;
+    font-family: Roboto, sans-serif;
     -ms-text-size-adjust: 100%;
     -moz-text-size-adjust: 100%;
     -webkit-text-size-adjust: 100%;
+    background: #FAFAFA;
 }
+
 input,button,textarea{font-family:inherit;}
 
 input::-ms-clear{display: none;}
@@ -36,3 +47,18 @@ img{vertical-align: top;}
 h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
 /*--------------------*/
 /*закончил*/
+html[data-theme='dark']{
+    --background-color: hsl(205, 24%, 15%)
+
+}
+
+html, body[data-theme='light']{
+    --background-color: hsl(0, 0%, 98%);
+
+
+}
+html, body{
+    background-color: var(--background-color);
+
+
+}

@@ -1,0 +1,41 @@
+.header__light{
+  background: #fff;
+}
+.header__dark{
+  background: hsl(209, 23%, 22%) ;
+}
+
+.header__container{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 60px;
+}
+.header__title{
+  font-size: 24px;
+  letter-spacing: 0.2px;
+  font-weight: 700;
+}
+.title__dark{
+  color: #fff;
+}
+.header__mode{
+  display: flex;
+  & > *:not(:last-child) {
+    margin: 0 10px 0 0 ;
+  }
+  align-items: center;
+  cursor: pointer;
+}
+.mode{}
+.mode__icon{}
+.mode__button{
+  background: inherit;
+  //padding: 8px;
+  letter-spacing: 0.2px;
+  min-width: 70px;
+}
+.btn__dark{
+  color: #fff;
+}
+
